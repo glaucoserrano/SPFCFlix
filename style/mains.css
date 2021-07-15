@@ -1,0 +1,110 @@
+/*Reset CSS*/
+:root{
+    --vermelho: #8B2722;
+    --branco: #fff;
+    --preto:#333;
+    --rgbaVermelho:139, 39, 34;
+    --font: 'Roboto';
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Body*/
+body{
+    background: var(--branco);
+    color: var(--preto);
+    font-family: var(--font);
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    margin:16px;
+}
+.img-logo{
+    width: 130px;
+    height: 100px;
+}
+header nav{
+    margin: 32px;
+}
+header nav a{
+    text-decoration: none;
+    color: var(--preto);
+    padding: 8px;
+}
+header a:hover{
+    color: var(--vermelho);
+}
+/*Titulo Principal*/
+.titulo-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.80)100%), url(../img/principal1.jpg) no-repeat;
+    height: 72vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.titulo-principal .descricao{
+    
+    font-size: 16px;
+    color: var(--branco);
+    
+}
+.titulo{
+    margin-top: 20%;
+    color: var(--branco);
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+.botao{
+    margin-top: 16px;
+    background-color: rgba(var(--rgbaVermelho), .30);
+    border: none;
+    padding: 16px 16px;
+    margin-right: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+    color:var(--branco);
+}
+
+.botao:hover{
+    background-color: rgba(0,0,0, .30);
+}
+div p{
+    padding: 8px;
+}
+.container{
+    margin-left: 24px
+}
+.carrosel-paulista{
+    
+    background-color: var(--vermelho);
+    color:var(--branco);
+}
+.box-titulo{
+    font-size: 15px;
+}
+.carrosel-brasileiro{
+    margin-top: 8px;
+    background-color: var(--branco);
+    color:var(--preto);
+}
+.carrosel-libertadores{
+    margin-top: 8px;
+    background-color: var(--preto);
+    color:var(--branco);
+}
+.carrosel-mundial{
+    margin-top: 8px;
+    background-color: var(--vermelho);
+    color:var(--branco);
+}
